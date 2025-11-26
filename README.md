@@ -1,3 +1,17 @@
+# 🎥🗣️📄 AI Interview Authenticity Analyzer
+
+> A multimodal system that flags whether an interview response looks **human** or **AI-assisted** – using **video**, **audio**, and **text** together.
+
+We built this system in **24 hours** during a hack-style sprint to tackle a growing problem:  
+it's getting harder to tell if someone is genuinely answering in an interview or secretly using AI to generate or feed them responses.
+
+To tackle this, we designed a **complete multimodal authenticity detection pipeline**:
+- A **video model** to track **eye gaze**, **head movement**, and **blinks**
+- An **audio model** to analyze **speech patterns** and extract a **transcript**
+- A **text model** to check if the **transcript matches AI-generated patterns**
+- Finally, a **fusion layer** that combines all three into one **authenticity score**
+
+---
 [FOLDER STRUCTURE]
 ai-interview-authenticity-analyzer/
 ├── app.py                     # Main Streamlit app (the code you pasted)
@@ -15,20 +29,6 @@ ai-interview-authenticity-analyzer/
 │   └── screenshots/           # Optional UI screenshots
 └── .streamlit/                # (Optional) Streamlit config
     └── config.toml
-# 🎥🗣️📄 AI Interview Authenticity Analyzer
-
-> A multimodal system that flags whether an interview response looks **human** or **AI-assisted** – using **video**, **audio**, and **text** together.
-
-We built this system in **24 hours** during a hack-style sprint to tackle a growing problem:  
-it's getting harder to tell if someone is genuinely answering in an interview or secretly using AI to generate or feed them responses.
-
-To tackle this, we designed a **complete multimodal authenticity detection pipeline**:
-- A **video model** to track **eye gaze**, **head movement**, and **blinks**
-- An **audio model** to analyze **speech patterns** and extract a **transcript**
-- A **text model** to check if the **transcript matches AI-generated patterns**
-- Finally, a **fusion layer** that combines all three into one **authenticity score**
-
----
 
 ## 🚀 What This App Does
 
