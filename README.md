@@ -12,24 +12,6 @@ To tackle this, we designed a **complete multimodal authenticity detection pipel
 - Finally, a **fusion layer** that combines all three into one **authenticity score**
 
 ---
-[FOLDER STRUCTURE]
-ai-interview-authenticity-analyzer/
-├── app.py                     # Main Streamlit app (the code you pasted)
-├── final_model/               # Trained text classification model
-│   ├── config.json
-│   ├── tokenizer.json
-│   ├── vocab.txt / merges.txt (depending on model)
-│   ├── special_tokens_map.json
-│   ├── pytorch_model.bin
-│   └── ...                    # Any other HF model files
-├── requirements.txt           # Python dependencies
-├── README.md                  # This file
-├── assets/
-│   ├── sample_video.mp4       # Optional sample video
-│   └── screenshots/           # Optional UI screenshots
-└── .streamlit/                # (Optional) Streamlit config
-    └── config.toml
-
 ## 🚀 What This App Does
 
 Given an **interview video**, the app:
